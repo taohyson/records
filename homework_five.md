@@ -48,29 +48,33 @@
 打印出来的结果一定很令人摸不着头脑。改进一下，做个标记：
 
 '''
-    var name = 'liujuanjuan1';  //申明一个变量，变量名叫name，把'liujuanjuan'这个字符串赋值给它
+var name = 'liujuanjuan1';  //申明一个变量，变量名叫name，把'liujuanjuan'这个字符串赋值给它
 
-    var liujuanjuan = {     //申明一个对象类型的变量，这个对象名名liujuanjuan
+var liujuanjuan = {     //申明一个对象类型的变量，这个对象名名liujuanjuan
 
-        name:'liujuanjuan2'  //这个对象有一个属性，这个属性叫name，这个属性的值是'liujuanjuan'
+    name:'liujuanjuan2'  //这个对象有一个属性，这个属性叫name，这个属性的值是'liujuanjuan'
 
-    };
+};
 
-    console.log(name);    //打印变量name的值
+console.log(name);    //打印变量name的值
 
-    console.log(liujuanjuan.name);   //打印对象liujuanjuan的name属性的值
+console.log(liujuanjuan.name);   //打印对象liujuanjuan的name属性的值
 
-    function liujuanjuan(name){  //定义一个函数，函数名叫liujuanjuan，有一个参数为name
+function liujuanjuanF(name){  //定义一个函数，函数名叫liujuanjuan，有一个参数为name
 
-        console.log(name)//打印这个参数的值
-        
-    }
-
-    liujuanjuan(name);  //调用函数liujuanjuan，参数为第一行变量name的值
+    console.log(name)//打印这个参数的值
     
-    liujuanjuan(liujuanjuan.name); //调用函数liujuanjuan，参数对象liujuanjuan的name属性的值
+}
+
+liujuanjuanF(name);  //调用函数liujuanjuan，参数为第一行变量name的值
+
+liujuanjuanF(liujuanjuan.name); //调用函数liujuanjuan，参数对象liujuanjuan的name属性的值
+
+// 这个案例的教训是，对象的名字和函数的名字不要重名。
 
 '''
+
+_实际上打印不出来。_
 
 ## 我的疑问：(暂时没有)
 
@@ -99,6 +103,9 @@ _我看到老师在使用新生大学网页版？如何使用？答：浏览器�
 _老师所谓的自学能力是啥？我理解的是，他把编程世界的视角与思维展示给我们，把基础的概念通过类比通俗易懂，把业务流程的逻辑关系刻入脑海，这些东西很基础，很适用。比如银行开户流程的演变图，婴儿名字，报数做饭这些类比和案例，我现在依然很清晰。_
 
 #### 作业讲解：顺序图/时序图
+
+好像懂了。想起来刚工作的时候，曾经听说过时序图这个东西。那是10年前了。
+
 
 #### js在前端中的地位
 
