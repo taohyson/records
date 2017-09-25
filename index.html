@@ -3,10 +3,68 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>记录：数据化一切</title>
+    <script src="https://unpkg.com/vue"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/style.css">
+
 </head>
 
 <body>
-<div>
-</div>
+    <div id="appJJ">
+        <div class="main-header">
+          <div class="container">
+            <h1>人至践，则无敌</h1>
+            {{liujuanjuanObj.name}}
+            {{liujuanjuanObj.year}}
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">今天是XX年XX月XX日</h3>
+                <h3 class="panel-title">本年度已经过去XX天</h3>
+                <h3 class="panel-title">还剩下XX天</h3>
+              </div>
+              <div class="panel-heading">
+                <h3 class="panel-title">100天番茄行动记录：</h3>
+                <h3 class="panel-title">xxxx</h3>
+                <h3 class="panel-title">xxxx</h3>
+              </div>
+              <div class="panel-heading">
+                <h3 class="panel-title">500字写作文章列表：</h3>
+                <h3 class="panel-title">xxxx</h3>
+                <h3 class="panel-title">xxxx</h3>
+              </div>
+          </div>
+        </div> 
+    </div>
+
+    
 </body>
 </html>
+
+<script>
+
+var liujuanjuanName = "刘娟娟";
+var liujuanjuanObj = {
+  name:liujuanjuanName,
+  year:"To 34周岁"
+};
+
+
+var writingList = {
+};
+
+
+// vue官网： https://cn.vuejs.org/v2/guide/
+// 初始化Vue
+var appJJ = new Vue({
+  el: '#appJJ',   // #app 和html中div#id的 app 对应
+  data: {
+    liujuanjuanObj: liujuanjuanObj 
+  }
+});
+
+</script>
